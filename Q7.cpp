@@ -1,11 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a=5 , b=9;
-    a=a^b;
-    b=b^a;
-    a=a^b;
-    cout<<"First number after swap is "<<a<<endl;
-    cout<<"Second number after swap is "<<b;
-    return 0;
+    int marks1,marks2,marks3;
+    cout<<"Enter Marks1 :";
+    cin>>marks1;
+    cout<<"Enter Marks2 :";
+    cin>>marks2;
+    cout<<"Enter Marks3 :";
+    cin>>marks3;
+    if(marks1>marks2 && marks1>marks3){
+        cout<<"Winner is 1 with marks "<<marks1;
+    }
+    else if(marks2>marks1 && marks2>marks3){
+        cout<<"Winner is 2 with marks "<<marks2;
+    }
+    else{
+        cout<<"Winner is 3 with marks "<<marks3;
+    }
 }
