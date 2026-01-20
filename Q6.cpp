@@ -1,11 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    float a,b;
-    cout<<"Enter First Number";
-    cin>>a;                    
-    cout<<"Enter Second Number";
+    float a;
+    float b,c;
+    cout<<"Enter Total Employees";
+    cin>>a;
+    cout<<"Enter Basic Salary";
     cin>>b;
-    cout<<"The quotient is "<<a/b;
+    c=b+b*(12.0/100.0);
+    cout<<"Basic Salary After Bonus "<<c<<endl;
+    cout<<"Net Salary "<<c*a;
     return 0;
 }
