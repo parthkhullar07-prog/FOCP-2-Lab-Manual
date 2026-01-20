@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a,b;
-    cout<<"Enter First Number";
-    cin>>a;                    
-    cout<<"Enter Second Number";
-    cin>>b;
-    cout<<"The product is "<<a*b;
+    int a=5 , b=9;
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    cout<<"First number after swap is "<<a<<endl;
+    cout<<"Second number after swap is "<<b;
     return 0;
 }
