@@ -13,3 +13,4 @@ int main(){
     cout<<"Net Salary "<<c*a;
     return 0;
 }
+
