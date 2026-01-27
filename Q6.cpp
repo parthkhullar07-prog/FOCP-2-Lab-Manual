@@ -1,16 +1,23 @@
 #include<iostream>
 using namespace std;
+class Office{
+    private:
+    int Totalemp , Basicsal , salaftbon;
+    public:
+    void Salaftbonus();
+};
+void Office :: Salaftbonus(){
+    cout<<"Enter Total Employee's : ";
+    cin>>Totalemp;
+    cout<<"Enter Basic Salary : ";
+    cin>>Basicsal;
+    cout<<"Bonus Is : "<<Basicsal*(12.0/100.0)<<endl;
+    salaftbon=Basicsal+Basicsal*(12.0/100.0);
+    cout<<"Salary After Bonus : "<<salaftbon<<endl;
+    cout<<"Net Salary : "<<salaftbon*Totalemp;
+}
 int main(){
-    float a;
-    float b,c;
-    cout<<"Enter Total Employees";
-    cin>>a;
-    cout<<"Enter Basic Salary";
-    cin>>b;
-    c=b+b*(12.0/100.0);
-    cout<<"Bonus "<<b*(12.0/100.0)<<endl;
-    cout<<"Basic Salary After Bonus "<<c<<endl;
-    cout<<"Net Salary "<<c*a;
+    Office o;
+    o.Salaftbonus();
     return 0;
 }
-
