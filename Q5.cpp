@@ -1,11 +1,25 @@
 #include<iostream>
 using namespace std;
+class Swap{
+    private:
+    int first , second;
+    public:
+    void swapnum();
+};
+void Swap :: swapnum(){
+    cout<<"Enter First Number : ";
+    cin>>first;
+    cout<<"Enter Second Number : ";
+    cin>>second;
+    cout<<"Numbers After Swap"<< endl;
+    first = first * second;
+    second = first/second;
+    first = first/second;
+    cout<<"First Number After Swap : "<<first<<endl;
+    cout<<"Second Number After Swap : "<<second;
+}
 int main(){
-    int a=5 , b=9;
-    a=a*b;
-    b=a/b;
-    a=a/b;
-    cout<<"First number after swap is "<<a<<endl;
-    cout<<"Second number after swap is "<<b;
+    Swap s;
+    s.swapnum();
     return 0;
 }
