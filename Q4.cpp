@@ -1,16 +1,25 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int a,b,c;
-    cout<<"Enter Item No.";
-    cin>>a;
-    cout<<"Enter Quantity";
-    cin>>b;
-    cout<<"Enter Unit Price";
-    cin>>c;
-    cout<<"The Amount Before Discount is "<<b*c<<endl;
+class Disc{
+    private:
+    int Item_num , Quantity , Unit_prc;
     float aftdisc;
-    aftdisc=(80.0/100.0)*b*c;
-    cout<<"The Amount After Discount is "<<aftdisc;
+    public:
+    void Discount();
+};
+void Disc :: Discount(){
+    cout<<"Enter Item Number : ";
+    cin>>Item_num;
+    cout<<"Enter Quantity : ";
+    cin>>Quantity;
+    cout<<"Enter Unit Price :";
+    cin>>Unit_prc;
+    cout<<"Amount Before Discount : "<<Quantity*Unit_prc<<endl;
+    aftdisc= (80.0/100.0)*Quantity*Unit_prc;
+    cout<<"Amount After Discount is : "<<aftdisc;
+}
+int main(){
+    Disc d;
+    d.Discount();
     return 0;
 }
